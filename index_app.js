@@ -63,3 +63,7 @@ myBtn.onclick = () => {
  }else{
   document.getElementById('total').innerHTML ='ค่าไม่ถูกต้อง';
  }
+
+   
+//   return sum;
+};
