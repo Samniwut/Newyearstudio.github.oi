@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!--link style Google fonts  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Mitr:wght@200;300;400;500;600;700&family=Noto+Sans+Thai:wdth,wght@87.1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- style link -->
+    <link rel="stylesheet" href="index.css" />
+
+    <!-- font-awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- boxicon -->
+    <link rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+
+    <title>Newyearstudio</title>
+  </head>
+  <script>
+   
+    function toggleBar(){
+      let toggleBar = document.querySelector('.sldebar')
+      toggleBar.style.display = 'flex'
+    }
+    function toggleSldebar(){
+      let toggleBar = document.querySelector('.sldebar')
+      toggleBar.style.display = 'none'
+    }
+    
+  </script>
+  <body>
+    <header>
+      <!-- Logo & contact icon  -->
+      <!-- <div class="header">
+        <div class="logo">
+          <img src="./logo/Logo_newyearstudio.png" alt="" />
+        </div>
+        <div class="icon-contact">
+          <a
+            href="https://www.facebook.com/p/Newyearstudio-%E0%B8%A5%E0%B8%B3%E0%B8%9E%E0%B8%B9%E0%B8%99-100047163417175/"
+          >
+            <img src="./logo/facebook-icon.png" alt=""
+          /></a>
+          <a href=""><img src="./logo/line-icon.png" alt="" /></a>
+        </div>
+      </div> -->
+      <!-- list -->
+      <div class="list-contect">
+        <div class="logo">
+          <img src="./logo/Logo_newyearstudio.png" alt="" />
+        </div>
+              <!-- Navbar -->
+        <ul class="Navbar">
+        <li><a href="#setion1">ล้างอัดรูป</a></li>
+        <li><a href="#setion1">ขยายรูป</a></li>
+        <li><a href="#setion3">บริการถ่ายรูป</a></li>
+        <li><a href="#setion4">คำนวนราคาอัดรูป</a></li>
+        <li><a href="#setion2">ติดต่อ</a></li>
+        </ul>
+        <div class="icon">
+          <a href="https://www.facebook.com/p/Newyearstudio-%E0%B8%A5%E0%B8%B3%E0%B8%9E%E0%B8%B9%E0%B8%99-100047163417175/" target="_blank">
+            <i class="fa-brands fa-facebook"></i></a>
+          <a href="https://lin.ee/m26qSTFf" target="_blank"><i class="fa-brands fa-line"></i></a>
+          <div class="toggle-bar">
+            <a href="#"><i class="fa-solid fa-bars" onclick="toggleBar()"></i></a>
+          </div>
+        </div>
+        <!-- sldebar -->
+        <ul class="sldebar">
+          <li class="Xmarkmenu"  onclick="toggleSldebar()"><i class="fa-solid fa-arrow-up"></i></li></i>
+         <li><a href="#setion1">ล้างอัดรูป</a></li>
+         <li><a href="#setion1">ขยายรูป</a></li>
+         <li><a href="#setion3">บริการถ่ายรูป</a></li>
+         <li><a href="#setion4">คำนวนราคาอัดรูป</a></li>
+         <li><a href="#setion2">ติดต่อ</a></li>
+         </ul>
+      </div>
+    </header>
+    <main>
+      <!-- slide show -->
+      <div class="slideshow">
+        <div class="list">
+          <div class="item">
+            <img
+              src="https://cdn.pixabay.com/photo/2020/05/14/23/44/the-camera-5171717_960_720.jpg"
+              alt=""
+            />
+          </div>
+          <div class="item">
+            <img
+              src="https://cdn.pixabay.com/photo/2020/03/09/06/18/camera-4914690_1280.jpg"
+              alt=""
+            />
+          </div>
+          <div class="item">
+            <img
+              src="https://cdn.pixabay.com/photo/2015/02/09/14/31/blonde-629726_1280.jpg"
+              alt=""
+            />
+          </div>
+          <div class="item">
+            <img
+              src="https://cdn.pixabay.com/photo/2014/11/22/00/51/camera-541213_960_720.jpg"
+              alt=""
+            />
+          </div>
+          <div class="item">
+            <img
+              src="https://cdn.pixabay.com/photo/2014/11/03/10/44/camera-514992_1280.jpg"
+              alt=""
+            />
+          </div>
+        </div>
+        <!-- Button prev and next -->
+        <div class="buttons">
+          <button id="prev"><</button>
+          <button id="next">></button>
+        </div>
+        <!-- dost List -->
+        <div class="dost">
+          <li class="active"></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+        </div>
+      </div>
+      <!-- End SlideShow -->
+
+      <!-- Content  -->
+         
+      <!-- service -->
+       <div class="service">
+         <h1>ร้านถ่ายรูป นิวเยียร์สตูดิโอลำพูน</h1>
+         <h3>บริการรับอัดรูปออนไลน์ ล้างรูปราคาถูกส่งทั่วประเทศ</h3>
+         <h3> ขนาดอัดรูปจัมโบ้ 4x6 ราคาเพียง <span>ใบละ 3 บาท</span> </h3>
+         <h3>ใช้กระดาษและสี Fujifilm ติดต่อLineID : @240uhkfk (อย่าลืม @)</h3>
+        
+       </div>
+
+        <!-- Card -->
+       <div class="header-cotainer">
+        บริการ
+      </div> 
+
+      <div class="container">
+         
+          <div class="item-1">
+            <div class="img" id="setion3"><img src="./logo/edit-img-1.png" alt=""></div>
+           <p>ถ่ายภาพ - ตัดต่อรูปภาพ</p>
+          </div>
+          <div class="item-1">
+            <div class="img"><img src="./logo/print.png" alt=""></div>
+           <p>อัดล้างรูป</p>
+          </div>
+          <div class="item-1">
+            <div class="img"><img src="./logo/print-2.jpg" alt=""></div>
+           <p>กรอบรูป กรอบลอย กรอบหลุยส์</p>
+          </div>
+        </div>
+      
+      <!-- print sell -->
+       <div class="print-sell" id="setion1">
+        <div class="sell">
+          <p>ราคาอัดรูป</p>
+        </div>
+        <div class="print-sell-colum">
+          <div class="sell-item">
+          <p>ขนาด (นิ้ว)</p>
+          <p>ราคา (บาท)</p>
+         </div>
+         <div class="sell-item">
+          <p>4x6</p>
+          <p>5</p>
+         </div>
+         <div class="sell-item">
+          <p>4x6 > 100 ขึ้นไป</p>
+          <p>4</p>
+         </div>
+         <div class="sell-item">
+          <p>4x6 > 300 ขึ้นไป</p>
+          <p>3</p>
+         </div>
+         <div class="sell-item">
+          <p>5x7</p>
+          <p>10</p>
+         </div>
+         <div class="sell-item">
+          <p>6x8</p>
+          <p>15</p>
+         </div>
+         <div class="sell-item">
+          <p>8x10</p>
+          <p>20</p>
+         </div>
+         <div class="sell-item">
+          <p>8x12 (A4)
+          </p>
+          <p>50</p>
+         </div>
+         <div class="sell-item">
+          <p>10x12</p>
+          <p>60</p>
+         </div>
+         <div class="sell-item">
+          <p>10x15</p>
+          <p>100</p>
+         </div>
+         <div class="sell-item">
+          <p>12x18</p>
+          <p>150</p>
+         </div>
+         <div class="sell-item">
+          <p>16x20</p>
+          <p>300</p>
+         </div>
+         <div class="sell-item">
+          <p>20x24</p>
+          <p>400</p>
+         </div>
+         <div class="sell-item">
+          <p>20x30</p>
+          <p>500</p>
+         </div>
+         <p style="text-align: center; font-weight: 300;">* กระดาษชนิดด้าน โดนน้ำได้ ไม่เป็นรอยนิ้วมือ</p>
+          <p style="text-align: center; font-weight: 300;">* ราคาอาจมีการเปลี่ยนแปลงโดยไม่ได้แจ้งให้ทราบล่วงหน้า</p>
+        </div> 
+       </div>
+        <!-- calculetor -->
+
+       <div class="calulertor">
+        <div class="calulertor-headder">
+          <div class="calulertor-headder-lsit">
+            <div class="calulertor-headder-lsit"><p>คำนวนราคาอัดรูป</p></div>
+            <label for="size">ขนาด : </label>
+              <select  id="size">
+                <option value="5">4x6</option>
+                <option value="4">4x6 > 100</option>
+                <option value="3">4x6 > 300</option>
+                <option value="10">5x7</option>
+                <option value="15">6x8</option>
+                <option value="20">8x10</option>
+                <option value="50">8x12(A4)</option>
+                <option value="60">10x12</option>
+                <option value="100">10x15</option>
+                <option value="150">12x18</option>
+                <option value="300">16x20</option>
+                <option value="400">20x24</option>
+                <option value="500">20x30</option>
+              </select>
+          </div>
+          <div class="calulertor-headder-lsit" id="setion4">
+            <p>จำนวน <input type="text" id="place" class="place"></p> 
+            <button id="btn-submit" class="btn-submit">คำนวน</button>
+            <button id="btn-submit" class="btn-submit">
+              <a href="https://lin.ee/m26qSTFf" target="_blank">
+                ส่งรูป</a>
+            </button>
+          </div>
+          <div class="calulertor-headder-lsit" id="total"><p></p></div>
+        </div>
+       </div>
+
+    </main>
+    <footer>
+      <div class="footer-contant">
+        <div class="header-contact" >
+          <h1 id="setion2">ติดต่อสอบถาม</h1>
+          <h3>สอบถามเกี่ยวกับสินค้าหรือบริการได้ทุกวัน (จันทร์-อาทิตย์)</h3>
+          <h3>( 09.00-19.00 น.)</h3>
+        </div>
+        <div class="contact">
+          <div class="phone">
+            <p>โทรศัพท์</p>
+            <a href="#"><i class="bx bxs-phone"></i>0843446667</a>
+          </div>
+          <div class="medai">
+            <p>Contact Us</p>
+            <a href="https://www.facebook.com/p/Newyearstudio-%E0%B8%A5%E0%B8%B3%E0%B8%9E%E0%B8%B9%E0%B8%99-100047163417175/" target="_blank">
+              <i class="fa-brands fa-facebook"></i> Facebook</a>
+            <!-- <a href="#"><i class="bx bxs-envelope"></i>Newyearstudio</a> -->
+            <a href="https://lin.ee/m26qSTFf" target="_blank"><i class="fa-brands fa-line"></i> LineID : @240uhkfk (อย่าลืม @)</a>
+          </div>
+          <div class="location">
+            <a href="https://www.google.com/maps?ll=18.556545,99.035951&z=15&t=m&hl=en&gl=TH&mapclient=embed&cid=13021094970808768499"><i class="bx bx-current-location"></i>ที่ตั้ง</a>
+            <p>98/1 หมู่ที่ 18 ตำบลป่าสัก อำเภอเมือง จังหวัดลำพูน 51000</p>
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3782.386945838518!2d99.03329037519254!3d18.55658588254397!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30dbd2ed391718e7%3A0xb4b438e321ae97f3!2sNewyearstudio!5e0!3m2!1sen!2sth!4v1733045349097!5m2!1sen!2sth"
+              width="600"
+              height="450"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="index_app.js"></script>
+  </body>
+</html>
