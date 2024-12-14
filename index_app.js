@@ -54,14 +54,12 @@ myBtn.onclick = () => {
   let size = document.getElementById("size").value;
   let place = document.getElementById("place").value;
   size = Number(size);
-//   console.log(size)
-//   console.log(place)
-// if(size === 5){
-//     sum = size * place;
-// }else{
-//     sum = size * place;
-// }
-sum = size * place;
-   document.getElementById('total').innerHTML ='ราคา: '+ sum +' บาท';
-//   return sum;
-};
+  place = Number(place);
+
+  
+ if(place >= 0){
+  sum = size * place;
+  document.getElementById('total').innerHTML ='ราคา: '+ sum +' บาท';
+ }else{
+  document.getElementById('total').innerHTML ='ค่าไม่ถูกต้อง';
+ }
