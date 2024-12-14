@@ -46,19 +46,21 @@ dost.forEach((li, key) => {
     reloadSlider();
   });
 });
-// End sldeder ---------------------------------
+// End sldeder ----------------------------------
+
 // Calculertor
 const myBtn = document.getElementById("btn-submit");
 myBtn.onclick = () => {
   let size = document.getElementById("size").value;
   let place = document.getElementById("place").value;
   size = Number(size);
-  place = Number(place); 
+  place = Number(place);
+
  if(place >= 0){
   sum = size * place;
   document.getElementById('total').innerHTML ='ราคา: '+ sum +' บาท';
  }else{
   document.getElementById('total').innerHTML ='ค่าไม่ถูกต้อง';
- }   
+ }
 //   return sum;
 };
